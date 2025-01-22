@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Drop down menu</title>
+    <style>
+.navber{
+    background-color: #0a5ab6;
+    padding: 1% 7%;
+    text-align: center;
+   
+}
+.navber a{
+    text-decoration: none;
+    color: yellow;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.drop-container{
+display: inline;
+
+}
+
+.drop-content {
+    position: absolute;
+    top: 30px;
+    right:10px;
+    background-color: #0a5ab6;
+    text-align:left ;
+    min-width: 100px;
+    display:none;
+
+
+}
+.drop-container:hover .drop-content{
+    display: block;
+
+}
+
+.drop-content a{
+    display: block;
+
+
+}
+    </style>
+</head>
+<body>
+    <div class="navber">
+        <a href="#">Home</a>
+        <a href="#">Tutorial</a>
+
+        <div class="drop-container">
+            <a href="#">Contract Me </a>
+
+           <div class="drop-content">
+            <a href="#">Facebook</a>
+            <a href="#">Email</a>
+           </div>
+        </div>
+        <a href="#">About Me</a>
+    </div>
+</body>
+</html>

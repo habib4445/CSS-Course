@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css animation</title>
+    <style>
+*{
+    box-sizing: border-box;
+}
+.skill-container{
+    background-color: gray;
+    width: 500px;
+    padding: 20px;
+
+}
+.skill-container li{
+    list-style-type: none;
+    margin: 50px 0;
+    font-weight: bolder;
+    text-transform: uppercase;
+    position: relative;
+}
+.skill-container li::before{
+
+content: '';
+position: absolute;
+top: calc(100% + 5px);
+left: 0;
+border-radius: 1000px;
+
+background-color: #a8a4a4;
+width: 100%;
+height: 25px;
+
+}
+.skill-container li::after{
+
+content: '';
+position: absolute;
+top: calc(100% + 5px);
+left: 0;
+border-radius: 1000px;
+
+background-color: whitesmoke;
+width: 0%;
+height: 25px;
+
+animation-duration: 2s;
+animation-timing-function: linear;
+animation-delay: 1s;
+animation-iteration-count: 100;
+animation-direction: forwards;
+
+}
+.skill-container li.h1::after
+{
+animation-name: h1;
+}
+@keyframes h1{
+    to{
+        width: 90%;
+        background-color:red;
+    }
+}
+.skill-container li.h2::after
+{
+animation-name: h2;
+}
+@keyframes h2{
+    to{
+        width: 80%;
+        background-color:green;
+
+    }
+}
+.skill-container li.h3::after
+{
+animation-name: h3;
+}
+@keyframes h3{
+    to{
+        width: 70%;
+        background-color: yellow;
+
+    }
+}   
+.skill-container li.h4::after
+{
+animation-name: h4;
+}
+@keyframes h4{
+    to{
+        width: 50%;
+        background-color: #fff;
+    }
+}
+  
+  </style>
+</head>
+<body>
+    <div class="skill-container">
+        <ul>
+            <li class="h1">HTML</li>
+            <li class="h2">CSS</li>
+            <li class="h3">JS</li>
+            <li class="h4">C++</li>
+        </ul>
+    </div>
+</body>
+</html>

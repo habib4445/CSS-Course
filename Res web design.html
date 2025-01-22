@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+*{
+    box-sizing: border-box;
+}
+.header{
+    background-color:coral;
+    color: white;
+    padding: 1% 5%;
+    text-align: center;
+}
+.row{
+    padding: 1% 5%;
+    background-color: #07bac0;
+}
+.row a{
+    color:white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px;
+    display: block;
+}
+.coloum{
+    background-color: #92e1f5;
+    padding: 1% 5%;
+}
+.footer{
+    background-color:black;
+    color: white;
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 20px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12 {width: 100%;}
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+.row:after{
+    content: '';
+    clear:both;
+    display: table;
+}
+
+
+
+    </style>
+</head>
+
+<body>
+<div class="header">
+<h1>Habibur Rahman</h1>
+</div>
+
+<div class="row col-2">
+    <a href="#">Home</a>
+    <a href="#">Tutorial</a>
+    <a href="#">Contract</a>
+    <a href="#">About Me</a>
+</div>
+<div class="coloum col-7">
+    <h1>I am a web designer</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda repudiandae repellendus, neque labore facilis, id placeat amet cum quisquam officia a iusto at quae, accusamus aspernatur inventore possimus veniam quia!</p><br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias repellendus voluptas perferendis, doloribus voluptatibus harum perspiciatis fugit dignissimos natus eaque! Iusto nemo eligendi aspernatur necessitatibus inventore unde totam accusamus Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae illum, nam nostrum officiis deleniti, eligendi nisi rerum optio provident eius eos? Assumenda deserunt sit distinctio repudiandae earum, maiores architecto exercitationem!</p>
+</div>
+    <div class="footer col-5">
+        &copy;Study With Habibur 2025. Developed by Habibur Rahman
+    </div>
+</body>
+</html>

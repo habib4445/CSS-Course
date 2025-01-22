@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+body{
+margin: 0;
+}
+h1{
+    font-size: 2.5rem;
+    text-align: center;
+}
+a{
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+[class*="col-"]
+{
+    float: left;
+    padding:10px;
+}
+
+/* for mobile*/
+
+[class*="col-"]{
+    width: 100%;
+}
+
+  
+.navbar{
+    padding: 1% 7%;
+    text-align: center;
+    background-color: #0c6168;
+}
+.navber::after{
+    content: '';
+    display: table;
+    clear: both;
+}

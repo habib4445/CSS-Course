@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+text-align: center;
+}
+.card{
+    margin: 0 auto;
+    max-width: 350px;
+    text-align: center;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px 0 black;
+    transition: 0.3s;
+    font-size: 0%;
+}
+.card:hover{
+    box-shadow: 0 16px 32px 0 yellow;
+}
+.btn:hover{
+    background-color:pink;
+
+}
+.cal-head #result{
+    width: 338px;
+    height: 100px;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: right;
+    padding: 0 5px;
+    letter-spacing: 2px;
+}
+.btn{
+    width: 85px;
+    height: 75px;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: rgb(77, 74, 74);
+    color: white;
+}
+.btn-s{
+    background-color: blueviolet;
+}
+.btn-s1{
+    background-color: orange;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Calculator</h1>
+<div class="card"> 
+
+<div class="cal-head">
+
+    <input type="text" id="result" maxlength="20">
+</div>
+<div class="cal-body">
+<div>
+    <input type="button" class="btn" value="C">
+    <input type="button" class="btn" value="+/-">
+    <input type="button" class="btn" value="%">
+    <input type="button" class="btn btn-s" value="/">
+</div>
+
+<div class="cal-body1">
+    <div>
+        <input type="button" class="btn" value="7">
+        <input type="button" class="btn" value="8">
+        <input type="button" class="btn" value="9">
+        <input type="button" class="btn btn-s" value="*">
+    </div>
+
+</div>
+<div class="cal-body2">
+    <div>
+        <input type="button" class="btn" value="4">
+        <input type="button" class="btn" value="5">
+        <input type="button" class="btn" value="6">
+        <input type="button" class="btn btn-s" value="-">
+    </div>
+    <div class="cal-body3">
+        <div>
+            <input type="button" class="btn" value="1">
+            <input type="button" class="btn" value="2">
+            <input type="button" class="btn" value="3">
+            <input type="button" class="btn btn-s" value="\">
+        </div>
+        <div class="cal-body4">
+            <div>
+                <input type="button" class="btn" value="0">
+                <input type="button" class="btn" value=".">
+                <input type="button" class="btn" value="DEL">
+                <input type="button" class="btn btn-s1" value="=">
+            </div>
+</div>
+<script>
+    var num1=prompt("Enter Number: ");
+    var num2=prompt("Enter Number: ");
+    num1 = parseInt(num1,10);
+    num2 = parseInt(num2,10);
+    
+     var sum,sub,mul,div,mod;
+     sum=num1+num2;
+     document.write("Add=" +sum + "<br/>")
+    
+     sub=num1-num2;
+     document.write("Sub=" +sub + "<br/>")
+    
+     mul=num1*num2;
+     document.write("mul=" +mul + "<br/>");
+    
+     div=num1/num2;
+     document.write("div=" +div + "<br/>");
+    
+     mod=num1%num2;
+     document.write("mod=" +mod + "<br/>")
+        </script>
+
+
+
+
+</body>
+</html>
